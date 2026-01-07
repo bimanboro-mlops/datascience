@@ -1,0 +1,37 @@
+[2026-01-07 13:29:15,772: INFO: main: ==================== Data Ingestion Stage Started ====================]
+[2026-01-07 13:29:15,772: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 13:29:15,773: INFO: common: YAML file : config\config.yaml loaded successfully]
+[2026-01-07 13:29:15,773: INFO: common: YAML file : params.yaml loaded successfully]
+[2026-01-07 13:29:15,774: INFO: common: YAML file : schema.yaml loaded successfully]
+[2026-01-07 13:29:15,777: INFO: common: Created directory at: artifacts]
+[2026-01-07 13:29:15,777: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 13:29:16,816: INFO: data_ingestion: File : artifacts/data_ingestion/data.zip downloaded with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D373:76F63:96F72:198B45:695E1251
+Accept-Ranges: bytes
+Date: Wed, 07 Jan 2026 07:59:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210087-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1767772757.617376,VS0,VE246
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 619903937daf5b852cbdca3f5b6e89cda7ac2fb9
+Expires: Wed, 07 Jan 2026 08:04:16 GMT
+Source-Age: 0
+
+]
+[2026-01-07 13:29:16,866: INFO: data_ingestion: File extracted to artifacts/data_ingestion successfully]
+[2026-01-07 13:29:16,867: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage Completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 13:29:16,867: INFO: main: ==================== Data Ingestion Stage Completed ====================]
