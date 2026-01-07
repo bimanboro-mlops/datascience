@@ -13,7 +13,7 @@ from src.datascience.utils.common import save_json
 import os
 os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/BimanAdmin/datascience.mlflow"
 os.environ["MLFLOW_TRACKING_USERNAME"]="BimanAdmin"
-os.environ["MLFLOW_TRACKING_PASSWORD"]="a2a251ec2b1b6b6ead9607777541ec6f27e0e59b"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="XYZ"
 
 class ModelEvaluation:
     def __init__(self,config: ModelEvaluationConfig):
