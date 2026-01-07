@@ -35,3 +35,156 @@ Source-Age: 0
 [2026-01-07 13:29:16,866: INFO: data_ingestion: File extracted to artifacts/data_ingestion successfully]
 [2026-01-07 13:29:16,867: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage Completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
 [2026-01-07 13:29:16,867: INFO: main: ==================== Data Ingestion Stage Completed ====================]
+[2026-01-07 16:40:29,379: INFO: main: ==================== Data Ingestion Stage Started ====================]
+[2026-01-07 16:40:29,380: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:40:29,383: INFO: common: YAML file : config\config.yaml loaded successfully]
+[2026-01-07 16:40:29,388: INFO: common: YAML file : params.yaml loaded successfully]
+[2026-01-07 16:40:29,389: INFO: common: YAML file : schema.yaml loaded successfully]
+[2026-01-07 16:40:29,390: INFO: common: Created directory at: artifacts]
+[2026-01-07 16:40:29,390: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 16:40:29,390: INFO: data_ingestion: File already exists of size: 23329 bytes]
+[2026-01-07 16:40:29,396: INFO: data_ingestion: File extracted to artifacts/data_ingestion successfully]
+[2026-01-07 16:40:29,396: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage Completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:40:29,397: INFO: main: ==================== Data Ingestion Stage Completed ====================]
+[2026-01-07 16:40:29,397: INFO: main: ==================== Data Validation Stage Started ====================]
+[2026-01-07 16:40:29,397: INFO: data_validation_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:40:29,398: INFO: common: YAML file : config\config.yaml loaded successfully]
+[2026-01-07 16:40:29,399: INFO: common: YAML file : params.yaml loaded successfully]
+[2026-01-07 16:40:29,403: INFO: common: YAML file : schema.yaml loaded successfully]
+[2026-01-07 16:40:29,404: INFO: common: Created directory at: artifacts]
+[2026-01-07 16:40:29,404: ERROR: data_validation_pipeline: "'ConfigBox' object has no attribute 'coulmns'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'COULMNS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'COULMNS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'COULMNS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'COULMNS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'coulmns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'coulmns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'coulmns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\mlops-projects\datascience-project\src\datascience\pipeline\data_validation_pipeline.py", line 15, in Initiate_data_validation
+    data_validation_config= config.get_data_validation_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mlops-projects\datascience-project\src\datascience\config\configuration.py", line 31, in get_data_validation_config
+    schema=self.schema.COULMNS
+           ^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'coulmns'"
+[2026-01-07 16:40:29,407: ERROR: main: "'ConfigBox' object has no attribute 'coulmns'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'COULMNS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'COULMNS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'COULMNS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'COULMNS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'coulmns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'coulmns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'coulmns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\mlops-projects\datascience-project\main.py", line 21, in <module>
+    data_validation.Initiate_data_validation()
+  File "E:\mlops-projects\datascience-project\src\datascience\pipeline\data_validation_pipeline.py", line 25, in Initiate_data_validation
+    raise e
+  File "E:\mlops-projects\datascience-project\src\datascience\pipeline\data_validation_pipeline.py", line 15, in Initiate_data_validation
+    data_validation_config= config.get_data_validation_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mlops-projects\datascience-project\src\datascience\config\configuration.py", line 31, in get_data_validation_config
+    schema=self.schema.COULMNS
+           ^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'coulmns'"
+[2026-01-07 16:41:56,246: INFO: main: ==================== Data Ingestion Stage Started ====================]
+[2026-01-07 16:41:56,247: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:41:56,248: INFO: common: YAML file : config\config.yaml loaded successfully]
+[2026-01-07 16:41:56,248: INFO: common: YAML file : params.yaml loaded successfully]
+[2026-01-07 16:41:56,249: INFO: common: YAML file : schema.yaml loaded successfully]
+[2026-01-07 16:41:56,250: INFO: common: Created directory at: artifacts]
+[2026-01-07 16:41:56,250: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 16:41:56,250: INFO: data_ingestion: File already exists of size: 23329 bytes]
+[2026-01-07 16:41:56,252: INFO: data_ingestion: File extracted to artifacts/data_ingestion successfully]
+[2026-01-07 16:41:56,252: INFO: data_ingestion_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Stage Completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:41:56,252: INFO: main: ==================== Data Ingestion Stage Completed ====================]
+[2026-01-07 16:41:56,252: INFO: main: ==================== Data Validation Stage Started ====================]
+[2026-01-07 16:41:56,252: INFO: data_validation_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:41:56,253: INFO: common: YAML file : config\config.yaml loaded successfully]
+[2026-01-07 16:41:56,254: INFO: common: YAML file : params.yaml loaded successfully]
+[2026-01-07 16:41:56,255: INFO: common: YAML file : schema.yaml loaded successfully]
+[2026-01-07 16:41:56,256: INFO: common: Created directory at: artifacts]
+[2026-01-07 16:41:56,256: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 16:41:56,300: INFO: data_validation_pipeline: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage Completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2026-01-07 16:41:56,300: INFO: main: ==================== Data Validation Stage Completed ====================]
